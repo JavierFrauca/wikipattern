@@ -1,293 +1,295 @@
-# 🎓 Patrones de Diseño y Arquitectura en C# - Repositorio Didáctico
+# 🎓 Design Patterns & Architecture in C# - Educational Repository
 
 [![.NET](https://img.shields.io/badge/.NET-8.0+-purple.svg)](https://dotnet.microsoft.com/download)
 [![C#](https://img.shields.io/badge/C%23-12.0-blue.svg)](https://docs.microsoft.com/en-us/dotnet/csharp/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
----
-
-## 📖 Acerca de este Repositorio
-
-Este repositorio es una **colección educativa completa** de patrones de diseño y arquitectura implementados en **C# 12** con **.NET 8+**. Ha sido creado específicamente con **fines didácticos** para ayudar a desarrolladores de todos los niveles a comprender, aprender y aplicar estos patrones fundamentales en sus proyectos profesionales.
-
-### 🎯 Objetivos Educativos
-
-- **📚 Aprendizaje Práctico**: Cada patrón incluye implementaciones realistas con ejemplos del mundo real
-- **💡 Comprensión Profunda**: Explicaciones detalladas de cuándo, cómo y por qué usar cada patrón
-- **🔧 Código Production-Ready**: Implementaciones robustas que pueden servir como referencia para proyectos reales
-- **🎓 Progresión Estructurada**: Desde patrones básicos hasta arquitecturas complejas
-- **💼 Aplicación Profesional**: Ejemplos contextualizados en escenarios empresariales reales
-
-### 🌟 Características Destacadas
-
-- ✅ **Implementaciones Completas**: Cada patrón incluye código funcional y demos interactivos
-- ✅ **Ejemplos Realistas**: Sistemas de e-commerce, trading, notificaciones, pagos, etc.
-- ✅ **Documentación Bilingüe**: Español e inglés para mayor accesibilidad
-- ✅ **Thread-Safety**: Consideraciones de concurrencia donde es relevante
-- ✅ **Mejores Prácticas**: Siguiendo convenciones de C# y .NET moderno
-- ✅ **Casos de Uso Claros**: Cuándo usar y cuándo NO usar cada patrón
-- ✅ **Progresión de Dificultad**: Desde conceptos básicos hasta arquitecturas avanzadas
+> 🌐 **Language / Idioma**: [🇺🇸 English](README.en.md) | [🇪🇸 Español](README.md) | [🇪🇸 Español (Original)](README.es.md)
 
 ---
 
-## 📋 Índice Completo de Patrones
+## 📖 About This Repository
 
-### 🏗️ Patrones Creacionales (Creational Patterns)
-*Enfocados en la creación de objetos de manera flexible y reutilizable*
+This repository is a **comprehensive educational collection** of design and architecture patterns implemented in **C# 12** with **.NET 8+**. It has been specifically created for **educational purposes** to help developers of all levels understand, learn, and apply these fundamental patterns in their professional projects.
 
-| Patrón | Descripción | Ejemplo Didáctico | Nivel |
-|--------|-------------|-------------------|-------|
-| [**Factory Method**](src/CreationalPatterns/FactoryMethod/) | Crea objetos sin especificar la clase exacta | 📧 Sistema de notificaciones empresariales | 🟢 Básico |
-| [**Abstract Factory**](src/CreationalPatterns/AbstractFactory/) | Familias de objetos relacionados | 🖥️ Interfaces de usuario multiplataforma | 🟡 Intermedio |
-| [**Builder**](src/CreationalPatterns/Builder/) | Construcción paso a paso de objetos complejos | 🖥️ Configurador de PCs personalizadas | 🟢 Básico |
-| [**Singleton**](src/CreationalPatterns/Singleton/) | Una única instancia global | ⚙️ Configuración de aplicación y cache | 🟢 Básico |
-| [**Prototype**](src/CreationalPatterns/Prototype/) | Clonación de objetos existentes | 📄 Plantillas de documentos | 🟡 Intermedio |
+### 🎯 Educational Objectives
 
-### 🔧 Patrones Estructurales (Structural Patterns)
-*Enfocados en la composición de clases y objetos*
+- **📚 Practical Learning**: Each pattern includes realistic implementations with real-world examples
+- **💡 Deep Understanding**: Detailed explanations of when, how, and why to use each pattern
+- **🔧 Production-Ready Code**: Robust implementations that can serve as reference for real projects
+- **🎓 Structured Progression**: From basic patterns to complex architectures
+- **💼 Professional Application**: Examples contextualized in real business scenarios
 
-| Patrón | Descripción | Ejemplo Didáctico | Nivel |
-|--------|-------------|-------------------|-------|
-| [**Adapter**](src/StructuralPatterns/Adapter/) | Hace compatibles interfaces incompatibles | 💳 Integración de sistemas de pago | 🟢 Básico |
-| [**Bridge**](src/StructuralPatterns/Bridge/) | Separa abstracción de implementación | 🎮 Reproductores multimedia multiplataforma | 🟡 Intermedio |
-| [**Composite**](src/StructuralPatterns/Composite/) | Estructura de árbol para objetos | 📁 Sistema de archivos y directorios | 🟡 Intermedio |
-| [**Decorator**](src/StructuralPatterns/Decorator/) | Añade funcionalidad dinámicamente | ☕ Personalizador de bebidas | 🟢 Básico |
-| [**Facade**](src/StructuralPatterns/Facade/) | Interfaz simplificada para subsistemas | 🏠 Sistema de automatización del hogar | 🟢 Básico |
-| [**Flyweight**](src/StructuralPatterns/Flyweight/) | Minimiza uso de memoria compartiendo datos | 🎮 Motor de renderizado de partículas | 🔴 Avanzado |
-| [**Proxy**](src/StructuralPatterns/Proxy/) | Placeholder que controla acceso a otro objeto | 🖼️ Carga lazy de imágenes con cache | 🟡 Intermedio |
+### 🌟 Key Features
 
-### 🎭 Patrones de Comportamiento (Behavioral Patterns)
-*Enfocados en algoritmos y asignación de responsabilidades*
-
-| Patrón | Descripción | Ejemplo Didáctico | Nivel |
-|--------|-------------|-------------------|-------|
-| [**Chain of Responsibility**](src/BehavioralPatterns/ChainOfResponsibility/) | Cadena de manejadores para procesar solicitudes | 🎫 Sistema de aprobación de solicitudes | 🟡 Intermedio |
-| [**Command**](src/BehavioralPatterns/Command/) | Encapsula solicitudes como objetos | 🎮 Editor con undo/redo | 🟡 Intermedio |
-| [**Interpreter**](src/BehavioralPatterns/Interpreter/) | Interpreta lenguajes o expresiones | 🧮 Calculadora de expresiones matemáticas | 🔴 Avanzado |
-| [**Iterator**](src/BehavioralPatterns/Iterator/) | Acceso secuencial a elementos de una colección | 📊 Recorrido de estructuras de datos | 🟢 Básico |
-| [**Mediator**](src/BehavioralPatterns/Mediator/) | Define comunicación entre objetos | 💬 Sistema de chat multiusuario | 🟡 Intermedio |
-| [**Memento**](src/BehavioralPatterns/Memento/) | Captura y restaura estados de objetos | 🎮 Sistema de guardado de juegos | 🟡 Intermedio |
-| [**Observer**](src/BehavioralPatterns/Observer/) | Notifica cambios a múltiples observadores | 📈 Sistema de trading en tiempo real | 🟢 Básico |
-| [**State**](src/BehavioralPatterns/State/) | Altera comportamiento según estado interno | 🚦 Máquina de estados de pedidos | 🟡 Intermedio |
-| [**Strategy**](src/BehavioralPatterns/Strategy/) | Familia de algoritmos intercambiables | 💰 Sistema de precios dinámico | 🟢 Básico |
-| [**Template Method**](src/BehavioralPatterns/TemplateMethod/) | Define esqueleto de algoritmo en clase base | 🍳 Recetas de cocina personalizables | 🟢 Básico |
-| [**Visitor**](src/BehavioralPatterns/Visitor/) | Operaciones sobre estructura de objetos | 📊 Analizador de código fuente | 🔴 Avanzado |
-
-### 🏛️ Patrones Arquitectónicos (Architectural Patterns)
-*Enfocados en la estructura general de aplicaciones*
-
-| Patrón | Descripción | Ejemplo Didáctico | Nivel |
-|--------|-------------|-------------------|-------|
-| [**MVC**](src/ArchitecturalPatterns/MVC/) | Model-View-Controller | 🌐 Aplicación web de gestión | 🟡 Intermedio |
-| [**MVVM**](src/ArchitecturalPatterns/MVVM/) | Model-View-ViewModel | 📱 Aplicación de escritorio con bindings | 🟡 Intermedio |
-| [**CQRS**](src/ArchitecturalPatterns/CQRS/) | Command Query Responsibility Segregation | 🛒 Sistema de e-commerce | 🔴 Avanzado |
-| [**Event Sourcing**](src/ArchitecturalPatterns/EventSourcing/) | Almacena eventos en lugar de estado | 🏦 Sistema bancario con auditoría | 🔴 Avanzado |
-| [**Repository**](src/ArchitecturalPatterns/Repository/) | Abstrae acceso a datos | 🗄️ Gestor de datos empresariales | 🟡 Intermedio |
-| [**Unit of Work**](src/ArchitecturalPatterns/UnitOfWork/) | Mantiene lista de objetos afectados por transacción | 💾 Transacciones de base de datos | 🟡 Intermedio |
-| [**Dependency Injection**](src/ArchitecturalPatterns/DependencyInjection/) | Inversión de control de dependencias | 🔧 Framework de inyección personalizado | 🟡 Intermedio |
-| [**Hexagonal**](src/ArchitecturalPatterns/Hexagonal/) | Arquitectura de puertos y adaptadores | 🏗️ Sistema modular empresarial | 🔴 Avanzado |
-
-### 🎯 Patrones de Dominio (Domain Patterns - DDD)
-*Enfocados en el modelado del dominio de negocio*
-
-| Patrón | Descripción | Ejemplo Didáctico | Nivel |
-|--------|-------------|-------------------|-------|
-| [**Domain Model**](src/DomainPatterns/DomainModel/) | Modelo rico del dominio de negocio | 🏢 Sistema de gestión empresarial | 🟡 Intermedio |
-| [**Entity**](src/DomainPatterns/Entity/) | Objetos con identidad única | 👤 Gestión de usuarios y perfiles | 🟢 Básico |
-| [**Value Object**](src/DomainPatterns/ValueObject/) | Objetos inmutables sin identidad | 💰 Money, Email, Address | 🟢 Básico |
-| [**Aggregate**](src/DomainPatterns/Aggregate/) | Conjunto de entidades tratadas como una unidad | 🛒 Carrito de compras completo | 🟡 Intermedio |
-| [**Domain Service**](src/DomainPatterns/DomainService/) | Lógica de negocio que no pertenece a entidades | 🧮 Calculadora de impuestos | 🟡 Intermedio |
-| [**Application Service**](src/DomainPatterns/ApplicationService/) | Orquesta casos de uso de aplicación | 🎯 Coordinador de procesos de negocio | 🟡 Intermedio |
-| [**Domain Events**](src/DomainPatterns/DomainEvents/) | Eventos significativos del dominio | 📢 Sistema de eventos empresariales | 🔴 Avanzado |
-| [**Specification**](src/DomainPatterns/Specification/) | Encapsula reglas de negocio | ✅ Validador de reglas complejas | 🟡 Intermedio |
-
-### 🛡️ Patrones de Resiliencia (Resilience Patterns)
-*Enfocados en la tolerancia a fallos y estabilidad*
-
-| Patrón | Descripción | Ejemplo Didáctico | Nivel |
-|--------|-------------|-------------------|-------|
-| [**Circuit Breaker**](src/ResiliencePatterns/CircuitBreaker/) | Previene fallos en cascada | 💳 Protección de servicios de pago | 🟡 Intermedio |
-| [**Retry**](src/ResiliencePatterns/Retry/) | Reintenta operaciones fallidas | 🔄 Cliente HTTP resiliente | 🟢 Básico |
-| [**Bulkhead**](src/ResiliencePatterns/Bulkhead/) | Aísla recursos críticos | 🚢 Aislamiento de pools de conexiones | 🔴 Avanzado |
-| [**Timeout**](src/ResiliencePatterns/Timeout/) | Previene operaciones colgadas | ⏰ Cliente con timeouts configurable | 🟢 Básico |
-| [**Rate Limiting**](src/ResiliencePatterns/RateLimiting/) | Controla tasa de solicitudes | 🚦 API con límites de velocidad | 🟡 Intermedio |
-| [**Fallback**](src/ResiliencePatterns/Fallback/) | Respuesta alternativa en caso de fallo | 🔄 Servicio con respaldo local | 🟡 Intermedio |
-
-### ⚡ Patrones de Concurrencia (Concurrency Patterns)
-*Enfocados en programación concurrente y paralela*
-
-| Patrón | Descripción | Ejemplo Didáctico | Nivel |
-|--------|-------------|-------------------|-------|
-| [**Producer-Consumer**](src/ConcurrencyPatterns/ProducerConsumer/) | Productores y consumidores con cola | 📦 Sistema de procesamiento de pedidos | 🟡 Intermedio |
-| [**Thread Pool**](src/ConcurrencyPatterns/ThreadPool/) | Pool de hilos reutilizables | 🔄 Procesador de tareas en paralelo | 🟡 Intermedio |
-| [**Async-Await**](src/ConcurrencyPatterns/AsyncAwait/) | Programación asíncrona moderna | 🛒 Procesamiento de órdenes async | 🟡 Intermedio |
-| [**Pipeline**](src/ConcurrencyPatterns/Pipeline/) | Procesamiento en etapas paralelas | 🏭 Pipeline de procesamiento de datos | 🔴 Avanzado |
-
-### 🧪 Patrones de Testing
-*Enfocados en pruebas y calidad de código*
-
-| Patrón | Descripción | Ejemplo Didáctico | Nivel |
-|--------|-------------|-------------------|-------|
-| [**TDD**](src/TestingPatterns/TDD/) | Test-Driven Development | ✅ Desarrollo guiado por pruebas | 🟢 Básico |
-| [**BDD**](src/TestingPatterns/BDD/) | Behavior-Driven Development | 📋 Especificaciones ejecutables | 🟡 Intermedio |
-| [**AAA Pattern**](src/TestingPatterns/AAA/) | Arrange-Act-Assert | 🎯 Estructura de pruebas unitarias | 🟢 Básico |
-| [**Test Doubles**](src/TestingPatterns/TestDoubles/) | Mocks, Stubs, Fakes | 🎭 Dobles de prueba para aislamiento | 🟡 Intermedio |
-| [**Page Object Model**](src/TestingPatterns/PageObjectModel/) | Abstracción de páginas web para pruebas | 🌐 Automatización de pruebas UI | 🟡 Intermedio |
+- ✅ **Complete Implementations**: Each pattern includes functional code and interactive demos
+- ✅ **Realistic Examples**: E-commerce systems, trading, notifications, payments, etc.
+- ✅ **Bilingual Documentation**: Spanish and English for greater accessibility
+- ✅ **Thread-Safety**: Concurrency considerations where relevant
+- ✅ **Best Practices**: Following modern C# and .NET conventions
+- ✅ **Clear Use Cases**: When to use and when NOT to use each pattern
+- ✅ **Difficulty Progression**: From basic concepts to advanced architectures
 
 ---
 
-## 🚀 Comenzando
+## 📋 Complete Pattern Index
 
-### 📋 Prerrequisitos
+### 🏗️ Creational Patterns
+*Focused on flexible and reusable object creation*
 
-- **.NET 8.0 SDK** o superior
+| Pattern | Description | Educational Example | Level |
+|---------|-------------|-------------------|-------|
+| [**Factory Method**](src/CreationalPatterns/FactoryMethod/) | Creates objects without specifying exact class | 📧 Enterprise notification system | 🟢 Basic |
+| [**Abstract Factory**](src/CreationalPatterns/AbstractFactory/) | Families of related objects | 🖥️ Cross-platform UI interfaces | 🟡 Intermediate |
+| [**Builder**](src/CreationalPatterns/Builder/) | Step-by-step construction of complex objects | 🖥️ Custom PC configurator | 🟢 Basic |
+| [**Singleton**](src/CreationalPatterns/Singleton/) | Single global instance | ⚙️ Application configuration and cache | 🟢 Basic |
+| [**Prototype**](src/CreationalPatterns/Prototype/) | Cloning existing objects | 📄 Document templates | 🟡 Intermediate |
+
+### 🔧 Structural Patterns
+*Focused on class and object composition*
+
+| Pattern | Description | Educational Example | Level |
+|---------|-------------|-------------------|-------|
+| [**Adapter**](src/StructuralPatterns/Adapter/) | Makes incompatible interfaces compatible | 💳 Payment system integration | 🟢 Basic |
+| [**Bridge**](src/StructuralPatterns/Bridge/) | Separates abstraction from implementation | 🎮 Cross-platform media players | 🟡 Intermediate |
+| [**Composite**](src/StructuralPatterns/Composite/) | Tree structure for objects | 📁 File system and directories | 🟡 Intermediate |
+| [**Decorator**](src/StructuralPatterns/Decorator/) | Adds functionality dynamically | ☕ Beverage customizer | 🟢 Basic |
+| [**Facade**](src/StructuralPatterns/Facade/) | Simplified interface for subsystems | 🏠 Home automation system | 🟢 Basic |
+| [**Flyweight**](src/StructuralPatterns/Flyweight/) | Minimizes memory usage by sharing data | 🎮 Particle rendering engine | 🔴 Advanced |
+| [**Proxy**](src/StructuralPatterns/Proxy/) | Placeholder that controls access to another object | 🖼️ Lazy image loading with cache | 🟡 Intermediate |
+
+### 🎭 Behavioral Patterns
+*Focused on algorithms and responsibility assignment*
+
+| Pattern | Description | Educational Example | Level |
+|---------|-------------|-------------------|-------|
+| [**Chain of Responsibility**](src/BehavioralPatterns/ChainOfResponsibility/) | Chain of handlers to process requests | 🎫 Request approval system | 🟡 Intermediate |
+| [**Command**](src/BehavioralPatterns/Command/) | Encapsulates requests as objects | 🎮 Editor with undo/redo | 🟡 Intermediate |
+| [**Interpreter**](src/BehavioralPatterns/Interpreter/) | Interprets languages or expressions | 🧮 Mathematical expression calculator | 🔴 Advanced |
+| [**Iterator**](src/BehavioralPatterns/Iterator/) | Sequential access to collection elements | 📊 Data structure traversal | 🟢 Basic |
+| [**Mediator**](src/BehavioralPatterns/Mediator/) | Defines communication between objects | 💬 Multi-user chat system | 🟡 Intermediate |
+| [**Memento**](src/BehavioralPatterns/Memento/) | Captures and restores object states | 🎮 Game save system | 🟡 Intermediate |
+| [**Observer**](src/BehavioralPatterns/Observer/) | Notifies changes to multiple observers | 📈 Real-time trading system | 🟢 Basic |
+| [**State**](src/BehavioralPatterns/State/) | Alters behavior based on internal state | 🚦 Order state machine | 🟡 Intermediate |
+| [**Strategy**](src/BehavioralPatterns/Strategy/) | Family of interchangeable algorithms | 💰 Dynamic pricing system | 🟢 Basic |
+| [**Template Method**](src/BehavioralPatterns/TemplateMethod/) | Defines algorithm skeleton in base class | 🍳 Customizable cooking recipes | 🟢 Basic |
+| [**Visitor**](src/BehavioralPatterns/Visitor/) | Operations on object structure | 📊 Source code analyzer | 🔴 Advanced |
+
+### 🏛️ Architectural Patterns
+*Focused on overall application structure*
+
+| Pattern | Description | Educational Example | Level |
+|---------|-------------|-------------------|-------|
+| [**MVC**](src/ArchitecturalPatterns/MVC/) | Model-View-Controller | 🌐 Web management application | 🟡 Intermediate |
+| [**MVVM**](src/ArchitecturalPatterns/MVVM/) | Model-View-ViewModel | 📱 Desktop application with bindings | 🟡 Intermediate |
+| [**CQRS**](src/ArchitecturalPatterns/CQRS/) | Command Query Responsibility Segregation | 🛒 E-commerce system | 🔴 Advanced |
+| [**Event Sourcing**](src/ArchitecturalPatterns/EventSourcing/) | Stores events instead of state | 🏦 Banking system with audit | 🔴 Advanced |
+| [**Repository**](src/ArchitecturalPatterns/Repository/) | Abstracts data access | 🗄️ Enterprise data manager | 🟡 Intermediate |
+| [**Unit of Work**](src/ArchitecturalPatterns/UnitOfWork/) | Maintains list of objects affected by transaction | 💾 Database transactions | 🟡 Intermediate |
+| [**Dependency Injection**](src/ArchitecturalPatterns/DependencyInjection/) | Inversion of control for dependencies | 🔧 Custom injection framework | 🟡 Intermediate |
+| [**Hexagonal**](src/ArchitecturalPatterns/Hexagonal/) | Ports and adapters architecture | 🏗️ Modular enterprise system | 🔴 Advanced |
+
+### 🎯 Domain Patterns (DDD)
+*Focused on business domain modeling*
+
+| Pattern | Description | Educational Example | Level |
+|---------|-------------|-------------------|-------|
+| [**Domain Model**](src/DomainPatterns/DomainModel/) | Rich business domain model | 🏢 Enterprise management system | 🟡 Intermediate |
+| [**Entity**](src/DomainPatterns/Entity/) | Objects with unique identity | 👤 User and profile management | 🟢 Basic |
+| [**Value Object**](src/DomainPatterns/ValueObject/) | Immutable objects without identity | 💰 Money, Email, Address | 🟢 Basic |
+| [**Aggregate**](src/DomainPatterns/Aggregate/) | Set of entities treated as a unit | 🛒 Complete shopping cart | 🟡 Intermediate |
+| [**Domain Service**](src/DomainPatterns/DomainService/) | Business logic that doesn't belong to entities | 🧮 Tax calculator | 🟡 Intermediate |
+| [**Application Service**](src/DomainPatterns/ApplicationService/) | Orchestrates application use cases | 🎯 Business process coordinator | 🟡 Intermediate |
+| [**Domain Events**](src/DomainPatterns/DomainEvents/) | Significant domain events | 📢 Enterprise event system | 🔴 Advanced |
+| [**Specification**](src/DomainPatterns/Specification/) | Encapsulates business rules | ✅ Complex rule validator | 🟡 Intermediate |
+
+### 🛡️ Resilience Patterns
+*Focused on fault tolerance and stability*
+
+| Pattern | Description | Educational Example | Level |
+|---------|-------------|-------------------|-------|
+| [**Circuit Breaker**](src/ResiliencePatterns/CircuitBreaker/) | Prevents cascading failures | 💳 Payment service protection | 🟡 Intermediate |
+| [**Retry**](src/ResiliencePatterns/Retry/) | Retries failed operations | 🔄 Resilient HTTP client | 🟢 Basic |
+| [**Bulkhead**](src/ResiliencePatterns/Bulkhead/) | Isolates critical resources | 🚢 Connection pool isolation | 🔴 Advanced |
+| [**Timeout**](src/ResiliencePatterns/Timeout/) | Prevents hanging operations | ⏰ Configurable timeout client | 🟢 Basic |
+| [**Rate Limiting**](src/ResiliencePatterns/RateLimiting/) | Controls request rate | 🚦 API with rate limits | 🟡 Intermediate |
+| [**Fallback**](src/ResiliencePatterns/Fallback/) | Alternative response on failure | 🔄 Service with local backup | 🟡 Intermediate |
+
+### ⚡ Concurrency Patterns
+*Focused on concurrent and parallel programming*
+
+| Pattern | Description | Educational Example | Level |
+|---------|-------------|-------------------|-------|
+| [**Producer-Consumer**](src/ConcurrencyPatterns/ProducerConsumer/) | Producers and consumers with queue | 📦 Order processing system | 🟡 Intermediate |
+| [**Thread Pool**](src/ConcurrencyPatterns/ThreadPool/) | Reusable thread pool | 🔄 Parallel task processor | 🟡 Intermediate |
+| [**Async-Await**](src/ConcurrencyPatterns/AsyncAwait/) | Modern asynchronous programming | 🛒 Async order processing | 🟡 Intermediate |
+| [**Pipeline**](src/ConcurrencyPatterns/Pipeline/) | Parallel stage processing | 🏭 Data processing pipeline | 🔴 Advanced |
+
+### 🧪 Testing Patterns
+*Focused on testing and code quality*
+
+| Pattern | Description | Educational Example | Level |
+|---------|-------------|-------------------|-------|
+| [**TDD**](src/TestingPatterns/TDD/) | Test-Driven Development | ✅ Test-driven development | 🟢 Basic |
+| [**BDD**](src/TestingPatterns/BDD/) | Behavior-Driven Development | 📋 Executable specifications | 🟡 Intermediate |
+| [**AAA Pattern**](src/TestingPatterns/AAA/) | Arrange-Act-Assert | 🎯 Unit test structure | 🟢 Basic |
+| [**Test Doubles**](src/TestingPatterns/TestDoubles/) | Mocks, Stubs, Fakes | 🎭 Test doubles for isolation | 🟡 Intermediate |
+| [**Page Object Model**](src/TestingPatterns/PageObjectModel/) | Web page abstraction for testing | 🌐 UI test automation | 🟡 Intermediate |
+
+---
+
+## 🚀 Getting Started
+
+### 📋 Prerequisites
+
+- **.NET 8.0 SDK** or higher
 - **C# 12** compatible IDE (Visual Studio 2022, VS Code, Rider)
-- **Git** para clonar el repositorio
+- **Git** to clone the repository
 
-### 📥 Instalación
+### 📥 Installation
 
 ```bash
-# Clonar el repositorio
-git clone https://github.com/tu-usuario/design-patterns-csharp.git
+# Clone the repository
+git clone https://github.com/your-username/design-patterns-csharp.git
 
-# Navegar al directorio
+# Navigate to directory
 cd design-patterns-csharp
 
-# Restaurar paquetes (si es necesario)
+# Restore packages (if needed)
 dotnet restore
 ```
 
-### 🎯 Cómo Usar Este Repositorio
+### 🎯 How to Use This Repository
 
-#### 📚 Para Estudiantes
+#### 📚 For Students
 
-1. **Comienza con los patrones básicos** (🟢) como Factory Method, Observer, Strategy
-2. **Lee la documentación** de cada patrón antes de ver el código
-3. **Ejecuta los demos** para ver los patrones en acción
-4. **Experimenta modificando** los ejemplos para entender mejor
-5. **Progresa gradualmente** hacia patrones más complejos
+1. **Start with basic patterns** (🟢) like Factory Method, Observer, Strategy
+2. **Read the documentation** for each pattern before viewing the code
+3. **Run the demos** to see patterns in action
+4. **Experiment by modifying** examples to better understand
+5. **Progress gradually** towards more complex patterns
 
-#### 👨‍🏫 Para Instructores
+#### 👨‍🏫 For Instructors
 
-- Cada patrón incluye **material didáctico completo**
-- **Ejemplos progresivos** desde conceptos básicos hasta implementaciones complejas
-- **Casos de uso reales** que los estudiantes pueden relacionar
-- **Ejercicios implícitos** a través de variaciones en los demos
+- Each pattern includes **complete educational material**
+- **Progressive examples** from basic concepts to complex implementations
+- **Real use cases** that students can relate to
+- **Implicit exercises** through variations in demos
 
-#### 💼 Para Profesionales
+#### 💼 For Professionals
 
-- **Referencia rápida** de implementaciones production-ready
-- **Mejores prácticas** aplicadas en cada ejemplo
-- **Consideraciones de rendimiento** y thread-safety
-- **Código reutilizable** para proyectos reales
+- **Quick reference** for production-ready implementations
+- **Best practices** applied in each example
+- **Performance considerations** and thread-safety
+- **Reusable code** for real projects
 
-### 🎮 Ejecutando los Ejemplos
+### 🎮 Running the Examples
 
-Cada patrón incluye demos interactivos:
+Each pattern includes interactive demos:
 
 ```csharp
-// Ejemplo: Factory Method
+// Example: Factory Method
 NotificationDemo.RunDemo();
 
-// Ejemplo: Observer Pattern  
+// Example: Observer Pattern  
 await StockTradingDemo.RunDemo();
 
-// Ejemplo: Strategy Pattern
+// Example: Strategy Pattern
 StrategyPatternDemo.RunDemo();
 
-// Ejemplo: Async/Await
+// Example: Async/Await
 await AsyncAwaitPatternDemo.RunDemo();
 ```
 
 ---
 
-## 🏆 Metodología de Aprendizaje
+## 🏆 Learning Methodology
 
-### 📈 Progresión Sugerida
+### 📈 Suggested Progression
 
-1. **🟢 Nivel Básico (1-2 semanas)**
+1. **🟢 Basic Level (1-2 weeks)**
    - Factory Method, Singleton, Strategy, Observer
    - Template Method, Iterator, Decorator
 
-2. **🟡 Nivel Intermedio (2-3 semanas)**
+2. **🟡 Intermediate Level (2-3 weeks)**
    - Builder, Adapter, Command, State
    - Repository, Unit of Work, MVC/MVVM
 
-3. **🔴 Nivel Avanzado (3-4 semanas)**
+3. **🔴 Advanced Level (3-4 weeks)**
    - CQRS, Event Sourcing, Hexagonal Architecture
    - Circuit Breaker, Pipeline, Domain Events
 
-### 🎯 Enfoque Didáctico
+### 🎯 Educational Approach
 
-Cada patrón sigue una estructura educativa consistente:
+Each pattern follows a consistent educational structure:
 
-1. **📖 Introducción conceptual** - ¿Qué problema resuelve?
-2. **🎯 Cuándo usarlo** - Escenarios apropiados
-3. **⚠️ Cuándo NO usarlo** - Anti-patrones y advertencias
-4. **💡 Implementación paso a paso** - Construcción gradual
-5. **🔧 Ejemplo realista** - Caso de uso del mundo real
-6. **✅ Demo interactivo** - Código ejecutable
-7. **📊 Análisis de resultados** - Lecciones aprendidas
-8. **🔗 Patrones relacionados** - Conexiones y combinaciones
-
----
-
-## 🤝 Contribuciones
-
-¡Las contribuciones son bienvenidas! Este es un proyecto educativo y valoramos:
-
-- 📝 **Mejoras en documentación**
-- 🐛 **Corrección de errores**
-- 💡 **Nuevos ejemplos didácticos**
-- 🌐 **Traducciones**
-- 🎯 **Sugerencias pedagógicas**
-
-Consulta [CONTRIBUTING.md](CONTRIBUTING.md) para más detalles.
+1. **📖 Conceptual introduction** - What problem does it solve?
+2. **🎯 When to use it** - Appropriate scenarios
+3. **⚠️ When NOT to use it** - Anti-patterns and warnings
+4. **💡 Step-by-step implementation** - Gradual construction
+5. **🔧 Realistic example** - Real-world use case
+6. **✅ Interactive demo** - Executable code
+7. **📊 Results analysis** - Lessons learned
+8. **🔗 Related patterns** - Connections and combinations
 
 ---
 
-## 📚 Recursos Adicionales
+## 🤝 Contributing
 
-### 📖 Libros Recomendados
+Contributions are welcome! This is an educational project and we value:
+
+- 📝 **Documentation improvements**
+- 🐛 **Bug fixes**
+- 💡 **New educational examples**
+- 🌐 **Translations**
+- 🎯 **Pedagogical suggestions**
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+---
+
+## 📚 Additional Resources
+
+### 📖 Recommended Books
 - "Design Patterns: Elements of Reusable Object-Oriented Software" - Gang of Four
 - "Clean Architecture" - Robert C. Martin
 - "Domain-Driven Design" - Eric Evans
 - "Patterns of Enterprise Application Architecture" - Martin Fowler
 
-### 🔗 Enlaces Útiles
+### 🔗 Useful Links
 - [Microsoft .NET Documentation](https://docs.microsoft.com/dotnet/)
 - [C# Programming Guide](https://docs.microsoft.com/dotnet/csharp/)
 - [Refactoring Guru - Design Patterns](https://refactoring.guru/design-patterns)
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está bajo la Licencia MIT. Consulta [LICENSE](LICENSE) para más información.
-
----
-
-## 🙏 Agradecimientos
-
-Este repositorio ha sido creado con fines puramente educativos, inspirado en las mejores prácticas de la industria y la comunidad de desarrolladores. Agradecemos a todos los autores y contribuidores de los recursos que han inspirado este trabajo.
+This project is under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ---
 
-## 📞 Contacto
+## 🙏 Acknowledgments
 
-¿Preguntas? ¿Sugerencias? ¿Encontraste un error?
+This repository has been created for purely educational purposes, inspired by industry best practices and the developer community. We thank all authors and contributors of the resources that have inspired this work.
 
-- 🐛 [Reportar un issue](https://github.com/tu-usuario/design-patterns-csharp/issues)
-- 💬 [Iniciar una discusión](https://github.com/tu-usuario/design-patterns-csharp/discussions)
-- 📧 Email: tu-email@ejemplo.com
+---
+
+## 📞 Contact
+
+Questions? Suggestions? Found a bug?
+
+- 🐛 [Report an issue](https://github.com/your-username/design-patterns-csharp/issues)
+- 💬 [Start a discussion](https://github.com/your-username/design-patterns-csharp/discussions)
+- 📧 Email: your-email@example.com
 
 ---
 
 <div align="center">
 
-**🎓 Aprende • 🔧 Practica • 🚀 Aplica**
+**🎓 Learn • 🔧 Practice • 🚀 Apply**
 
-*Domina los patrones de diseño y conviértete en un mejor desarrollador*
+*Master design patterns and become a better developer*
 
 </div>
