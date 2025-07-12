@@ -85,6 +85,8 @@ This repository is a **comprehensive educational collection** of design and arch
 | [**MVVM**](src/ArchitecturalPatterns/MVVM/) | Model-View-ViewModel | 📱 Desktop application with bindings | 🟡 Intermediate |
 | [**CQRS**](src/ArchitecturalPatterns/CQRS/) | Command Query Responsibility Segregation | 🛒 E-commerce system | 🔴 Advanced |
 | [**Event Sourcing**](src/ArchitecturalPatterns/EventSourcing/) | Stores events instead of state | 🏦 Banking system with audit | 🔴 Advanced |
+| [**Event Driven**](src/ArchitecturalPatterns/EventDriven/) | Event-driven programming and architecture | 🛒 Distributed e-commerce workflow | 🔴 Advanced |
+| [**Outbox**](src/ArchitecturalPatterns/Outbox/) | Guarantees event delivery with transactional consistency | 📦 Reliable event publishing | 🔴 Advanced |
 | [**Repository**](src/ArchitecturalPatterns/Repository/) | Abstracts data access | 🗄️ Enterprise data manager | 🟡 Intermediate |
 | [**Unit of Work**](src/ArchitecturalPatterns/UnitOfWork/) | Maintains list of objects affected by transaction | 💾 Database transactions | 🟡 Intermediate |
 | [**Dependency Injection**](src/ArchitecturalPatterns/DependencyInjection/) | Inversion of control for dependencies | 🔧 Custom injection framework | 🟡 Intermediate |
